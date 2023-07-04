@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 1 недели</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/icons/summer.svg"/>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main>
+        <h1>Weather sounds</h1>  
+        <div class="sounds">
+            <div class="sound">
+                <div class="img">
+                    <img src="./assets/summer-bg.jpg" />
+                    <div class="icon">
+                        <img src="./assets/icons/summer.svg" id="summer"/>
+                    </div>
+                </div>
+                <div class="range">
+                    <input 
+                        id="range-summer" 
+                        min="0" 
+                        max="100" 
+                        value="0" 
+                        type="range" 
+                        onchange="volumeAudio('summer')"
+                    >
+                </div>
+            </div>
+            <div class="sound">
+                <div class="img">
+                    <img src="./assets/rain-bg.jpg" />
+                    <div class="icon">
+                        <img src="./assets/icons/rain.svg" id="rain"/>
+                    </div>
+                </div>
+                <div class="range">
+                    <input 
+                        id="range-rain" 
+                        min="0" 
+                        max="100" 
+                        value="0" 
+                        type="range" 
+                        onchange="volumeAudio('rain')"
+                    >
+                </div>
+            </div>
+            <div class="sound" >
+                <div class="img">
+                    <img src="./assets/winter-bg.jpg" />
+                    <div class="icon">
+                        <img src="./assets/icons/winter.svg" id="winter"/>
+                    </div>
+                </div>
+                <div class="range">
+                    <input 
+                        id="range-winter" 
+                        min="0" 
+                        max="100" 
+                        value="0" 
+                        type="range" 
+                        onchange="volumeAudio('winter')"
+                    >
+                </div>
+            </div>
+            <audio  
+                class="hide" 
+                id="audio-summer" 
+                src="./assets/sounds/summer.mp3" 
+                type="audio/mp3" 
+                controls>
+            </audio>
+            <audio 
+                class="hide" 
+                id="audio-rain" 
+                src="./assets/sounds/rain.mp3" 
+                type="audio/mp3" 
+                controls>
+            </audio>
+            <audio 
+                class="hide" 
+                id="audio-winter" 
+                src="./assets/sounds/winter.mp3" 
+                type="audio/mp3" 
+                controls>
+            </audio>
+        </div>
+    </main>
+	<script src="app.js"></script>
+  </body>
+</html>

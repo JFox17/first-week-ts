@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: url("/fonts/Roboto-Bold.ttf") format("ttf")
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url("./assets/summer-bg.jpg");
+    backdrop-filter: blur(5px);
+    background-position: top left;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 2%;
+    width: 100vw;
+    height: 100vh;
+}
+h1 {
+    font-size: 6vw;
+    font-weight: 500;
+    text-align: center;
+    color: orange;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.sounds {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 20vw 20vw 20vw;
+    justify-content: center;
+}
+.sound > audio {
+    opacity: 0;
+}
+.img {
+    width: 20vw;
+    height: auto;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.icon > img {
+    width: 5vw;
+}
+.hide {
+    display: none;
+}
+.range {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.range > input {
+    max-width: 100%;
+}
+ 
